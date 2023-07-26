@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 env:
   test_env: ${{ env.test_env }}
-  test_secret:  ${{ secret.test_secret }}
+  test_secret:  ${{ secrets.test_secret }}
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
