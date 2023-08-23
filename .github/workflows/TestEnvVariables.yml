@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 
 env: 
-  env_var: Global.${{ vars.TestVariable }}
+  env_var: ${{ vars.TestVariable }}
   env_new: ${{ secrets.TEST_SECRET }}
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
