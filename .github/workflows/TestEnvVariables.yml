@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 
 env: 
-  env_var: ${{ vars.ENV_CONTEXT_VAR }}
+  env_var: ${{ vars.TestVariable }}
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -37,3 +37,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo ${{env.env_var}}
